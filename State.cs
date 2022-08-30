@@ -6,6 +6,15 @@
         int playerNo;
         int visitCount;
         double winScore = 0;
+        public void CopyState(State state)
+        {
+            board = new Board();
+            board.CopyBoard(state.getBoard());
+            playerNo = state.playerNo;
+            visitCount = state.visitCount;
+            winScore = state.winScore;
+
+        }
         public void setBoard(Board rt)
         {
             board = rt;

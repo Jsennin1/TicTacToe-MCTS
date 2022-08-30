@@ -10,6 +10,20 @@
             state = new State();
             childArray = new List<Node>();
         }
+        public void copyStateOfNode(Node node)
+        {
+            state = new State();
+            state.CopyState(node.getState());
+            /**childArray = new List<Node>();
+            foreach (var child in node.getChildArray())
+            {
+                Node newChild = new Node();
+                newChild.copyNode(child);
+                childArray.Add(newChild);
+            }*/
+            parent = node.getParent();
+
+        }
         public void setState(State st)
         {
             state = st;
@@ -28,7 +42,7 @@
         }
         public void setChildArray(List<Node> ch)
         {
-            childArray = ch.ToList();
+            childArray = ch;
         }
         public List<Node> getChildArray()
         {
@@ -49,7 +63,8 @@
             Node selectedNode = null;
             foreach (var item in childArray)
             {
-                if (item.getState().getWinScore() >= max) {
+                if (item.getState().getWinScore() >= max)
+                {
                     max = item.getState().getWinScore();
                     selectedNode = item;
                 }

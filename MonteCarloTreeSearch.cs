@@ -78,7 +78,9 @@ namespace TicTacToe_MCTS
         }
         private int simulateRandomPlayout(Node node)
         {
-            Node tempNode = node;
+            
+            Node tempNode = new Node();
+            tempNode.copyStateOfNode(node);
             State tempState = tempNode.getState();
             int boardStatus = tempState.getBoard().checkStatus();
             if (boardStatus == opponent)

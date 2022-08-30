@@ -16,6 +16,10 @@
             }
         }
         // getters and setters
+        public void CopyBoard(Board board) 
+        {
+            setBoardValues(board.getBoardValues());
+        }
         public void performMove(int player, Position p)
         {
             boardValues[p.X][p.Y] = player;
@@ -83,6 +87,7 @@
                 }
                 Console.WriteLine("\n");
             }
+            Console.WriteLine("\n");
         }
     }
 
