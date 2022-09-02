@@ -57,10 +57,10 @@
             for (int i = 0; i < emptyPos.Count; i++)
             {
                 var state = new State();
-                state.playerNo = 3 - playerNo;
+                state.playerNo = playerNo;
                 state.board = new Board();
                 state.board.setBoardValues(board.getBoardValues());
-                state.board.performMove(playerNo, emptyPos[i]);
+                state.board.performMove(3 - playerNo, emptyPos[i]);
                 possibleMoves.Add(state);
             }
             return possibleMoves;

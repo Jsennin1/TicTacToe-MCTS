@@ -43,7 +43,8 @@
             else if ((boardValues[0][0] == P2 && boardValues[1][1] == P2 && boardValues[2][2] == P2) ||
                         (boardValues[2][0] == P2 && boardValues[1][1] == P2 && boardValues[0][2] == P2))
                 winner = P2;
-            if(winner != 0) return winner;
+            if(winner != 0) 
+                return winner;
 
             //except diags
             for (int i = 0; i < 3; i++)
@@ -55,6 +56,9 @@
                         (boardValues[0][i] == P2 && boardValues[1][i] == P2 && boardValues[2][i] == P2))
                     winner = P2;
             }
+            if (winner != 0) 
+                return winner;
+
             if (getEmptyPositions().Count > 0)
                 return IN_PROGRESS;
 

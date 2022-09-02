@@ -11,9 +11,9 @@
         public static void givenEmptyBoard_whenSimulateInterAIPlay_thenGameDraw()
         {
             Board board = new Board();
-            int player = Board.P2;
+            int player = Board.P1;
             int totalMoves = Board.DEFAULT_BOARD_SIZE * Board.DEFAULT_BOARD_SIZE;
-            int endTime = 1;
+            int endTime = 3;
             MonteCarloTreeSearch mcts = new MonteCarloTreeSearch();
             for (int i = 0; i < totalMoves; i++)
             {

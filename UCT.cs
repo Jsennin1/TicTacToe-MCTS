@@ -15,17 +15,15 @@
 
         public static Node findBestNodeWithUCT(Node node)
         {
-            if (node.getChildArray().Count == 0)
-                return null;
-
             int parentVisit = node.getState().getVisitCount();
             double max = int.MinValue;
             Node selectedNode = null;
             foreach (var item in node.getChildArray())
             {
-                if (uctValue(parentVisit,item.getState().getWinScore(), item.getState().getVisitCount()) >= max)
+                double uctVal = uctValue(parentVisit, item.getState().getWinScore(), item.getState().getVisitCount());
+                if (uctVal >= max)
                 {
-                    max = item.getState().getWinScore();
+                    max = uctVal;
                     selectedNode = item;
                 }
             }
