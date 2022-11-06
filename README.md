@@ -7,7 +7,9 @@ Small project to learn Monte Carlo Tree Search
 Result of program : 
 
 AI vs AI tictactoe!
+
 1-)
+
 | 0 || 0 || 0 |
 
 | 0 || 1 || 0 |
@@ -17,6 +19,7 @@ AI vs AI tictactoe!
 
 
 2-)
+
 | 0 || 0 || 0 |
 
 | 0 || 1 || 0 |
@@ -26,6 +29,7 @@ AI vs AI tictactoe!
 
 
 3-)
+
 | 0 || 0 || 0 |
 
 | 0 || 1 || 0 |
@@ -35,6 +39,7 @@ AI vs AI tictactoe!
 
 
 4-)
+
 | 0 || 2 || 0 |
 
 | 0 || 1 || 0 |
@@ -44,6 +49,7 @@ AI vs AI tictactoe!
 
 
 5-)
+
 | 1 || 2 || 0 |
 
 | 0 || 1 || 0 |
@@ -53,6 +59,7 @@ AI vs AI tictactoe!
 
 
 6-)
+
 | 1 || 2 || 0 |
 
 | 0 || 1 || 0 |
@@ -62,6 +69,7 @@ AI vs AI tictactoe!
 
 
 7-)
+
 | 1 || 2 || 0 |
 
 | 0 || 1 || 1 |
@@ -71,6 +79,7 @@ AI vs AI tictactoe!
 
 
 8-)
+
 | 1 || 2 || 0 |
 
 | 2 || 1 || 1 |
@@ -80,6 +89,7 @@ AI vs AI tictactoe!
 
 
 9-)
+
 | 1 || 2 || 1 |
 
 | 2 || 1 || 1 |
