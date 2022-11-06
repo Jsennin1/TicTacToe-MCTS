@@ -5,7 +5,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("AI vs AI tictactoe!");
             givenEmptyBoard_whenSimulateInterAIPlay_thenGameDraw();
         }
         public static void givenEmptyBoard_whenSimulateInterAIPlay_thenGameDraw()
